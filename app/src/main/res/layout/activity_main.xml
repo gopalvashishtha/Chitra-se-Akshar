@@ -1,50 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/snapBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="13dp"
-        android:layout_marginStart="57dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="57dp"
-        android:text="Photo"/>
-    <Button
-        android:id="@+id/detectBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/snapBtn"
-        android:text="Detect"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="43dp"/>
+    tools:context="com.example.chitraseakshar.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:src="@drawable/ic_image"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/scrollview"
+        android:id="@+id/imgView"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:layout_margin="20dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@android:color/background_light"
-        />
+        android:layout_height="220dp"
+        android:contentDescription="@string/app_name" />
 
-    <TextView
-        android:id="@+id/txtView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="284dp"/>
+    <ScrollView
+        android:layout_marginTop="10dp"
+    app:layout_constraintTop_toTopOf="@id/imgView"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tvText"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:text="Text will be shown here"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
 
-</RelativeLayout>
+
+</ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

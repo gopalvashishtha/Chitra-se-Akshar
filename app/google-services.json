@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "956710245098",
+    "firebase_url": "https://textrecog-a04eb.firebaseio.com",
+    "project_id": "textrecog-a04eb",
+    "storage_bucket": "textrecog-a04eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956710245098:android:bf1bd8907c3f28b26d3d93",
+        "android_client_info": {
+          "package_name": "com.example.chitraseakshar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956710245098-h7cuf10bk2rv2ha9peplj8matekobefa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chitraseakshar",
+            "certificate_hash": "d90f1a2a9ebbf2d5330119424fed6b512b52efa4"
+          }
+        },
+        {
+          "client_id": "956710245098-23qa1bdcrni9v4c9u2l4ltcolr50i39u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPQ0EaTvCCUTaVbHR3hP9VjB0LnmdLrRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956710245098-23qa1bdcrni9v4c9u2l4ltcolr50i39u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

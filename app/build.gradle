@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
 
 android {
     compileSdkVersion 30
@@ -8,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.chitraseakshar"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -33,5 +35,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+
+    implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+    //image picker
+    implementation 'com.github.dhaval2404:imagepicker:1.7.5'
+
+
+
 
 }
